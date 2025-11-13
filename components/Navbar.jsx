@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 cursor-pointer">
           <li><Link href="/">About</Link></li>
-          <li><Link href="/">Calorie Counter</Link></li>
+          <li><Link href="/">BMI Calculator</Link></li>
           <li><Link href="/">Blogs</Link></li>
           <li><Link href="/">Testimonials</Link></li>
           <li><Link href="/">Book an Appointment</Link></li>

@@ -12,11 +12,11 @@ const Navbar = () => {
     <header className="bg-[#10B981] text-white shadow-md">
       <nav className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
-        <div className="text-2xl font-bold cursor-pointer">Logo</div>
+        <Link href="/"><div className="text-2xl font-bold cursor-pointer">Logo</div></Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 cursor-pointer">
-          <li><Link href="/">About</Link></li>
+          <li><Link href="/about">About</Link></li>
           <li><Link href="/">BMI Calculator</Link></li>
           <li><Link href="/">Blogs</Link></li>
           <li><Link href="/">Testimonials</Link></li>

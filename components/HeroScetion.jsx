@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "./ui/button";
+import  Link  from "next/link";
 
 const HeroScetion = () => {
   return (
     <div className="relative z-20 grid grid-cols-1 gap-4 p-10 sm:grid-cols-2">
       <div className=" w-full h-100 flex flex-col justify-center items-center ">
-        <h1 className="text-4xl font-bold bg-linear-to-r from-[#065F46] to-[#CCFBF1] rounded-4xl px-4 py-2 mb-4 ">
+        <h1 className="text-4xl font-bold bg-linear-to-r from-[#065F46] to-[#CCFBF1] rounded-4xl px-4 py-2 mb-4 tracking-tighter">
           Welcome To Nuticare
         </h1>
         <p className="bg-black rounded px-3 text-[#34D399] text-xl font-semibold">
@@ -21,8 +22,8 @@ const HeroScetion = () => {
           providing nutritional counselling to patients with lifestyle-related
           and chronic health conditions.
         </p>
-        <Button className="bg-emerald-700 cursor-pointer hover:bg-[#065F46]">
-          Know More
+        <Button asChild className="bg-emerald-700 cursor-pointer hover:bg-[#065F46]">
+          <Link href="/about">Know More</Link>
         </Button>
       </div>
     </div>
